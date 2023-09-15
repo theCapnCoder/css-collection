@@ -1,0 +1,76 @@
+.wrapper {
+  background: #262626;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+
+  .container {
+    display: flex;
+
+    .box {
+      width: 20vw;
+      text-align: center;
+      line-height: 100vh;
+      flex-grow: 1;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: 1s;
+      cursor: pointer;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        line-height: 100vh;
+        font-size: 2em;
+        background: rgba(0, 0, 0, 0.8);
+        transition: 0.5s;
+
+        span {
+          width: 100%;
+          transition: 1s;
+          color: #fff;
+          padding: 25px 20px;
+          text-transform: uppercase;
+          background: rgba(255, 255, 255, 0);
+          letter-spacing: 2px;
+        }
+      }
+
+      &:hover {
+        width: 40vw;
+
+        h2 {
+          background: rgba(0, 0, 0, 0);
+        }
+
+        span {
+          color: #262626;
+          background: rgba(255, 255, 255, 0.8);
+          letter-spacing: 10px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+
+    .box:nth-child(1) {
+      background: url("./img/fruit1.jpg");
+    }
+
+    .box:nth-child(2) {
+      background: url("./img/fruit2.jpg");
+    }
+
+    .box:nth-child(3) {
+      background: url("./img/fruit3.jpg");
+    }
+
+    .box:nth-child(4) {
+      background: url("./img/fruit4.jpg");
+    }
+
+    .box:nth-child(5) {
+      background: url("./img/fruit5.jpg");
+    }
+  }
+}
