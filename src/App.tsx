@@ -1,3 +1,4 @@
+import { FlipCard } from "./components/Flexbox/FlipCard/FlipCard";
 import { FullscreenHoverEfects } from "./components/Flexbox/FullscreenHoverEfects/FullscreenHoverEfects";
 import { HoverEffects } from "./components/Flexbox/HoverEffects/HoverEffects";
 import { ResponsiveMansory } from "./components/Flexbox/ResponsiveMansory/ResponsiveMansory";
@@ -13,7 +14,8 @@ function App() {
       {/* <FullscreenHoverEfects /> */}
       {/* <ResponsiveMansory /> */}
       {/* <SplitScreen />} */}
-      <SplitScreen2 />
+      {/* <SplitScreen2 /> */}
+      <FlipCard />
     </div>
   );
 }
