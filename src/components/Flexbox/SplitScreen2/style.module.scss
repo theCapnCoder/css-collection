@@ -1,0 +1,78 @@
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  background: #000;
+}
+
+.split {
+  display: flex;
+  overflow: hidden;
+
+  &:hover {
+    .screen {
+      opacity: 0.3;
+    }
+  }
+
+  .screen {
+    position: relative;
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    transition: 1s;
+
+    .content {
+      position: absolute;
+      padding: 40px;
+      width: 400px;
+      height: auto;
+      background: #fff;
+      box-sizing: border-box;
+      transform: translateX(100%);
+      transition: 0.5s;
+      text-align: justify;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-style: 30px;
+        color: #ed363a;
+      }
+    }
+
+    &:hover {
+      flex-grow: 5;
+      opacity: 1;
+
+      .content {
+        transform: translateX(0);
+        transition-delay: .5s;
+      }
+    }
+  }
+
+  .screen:nth-child(1) {
+    background-image: url("./img/IronMan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .screen:nth-child(2) {
+    background-image: url("./img/CaptainMarvel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .screen:nth-child(3) {
+    background-image: url("./img/Tor.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
