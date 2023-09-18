@@ -58,21 +58,21 @@ section {
   .screen:nth-child(1) {
     background-image: url("./img/IronMan.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
   }
 
   .screen:nth-child(2) {
     background-image: url("./img/CaptainMarvel.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
   }
 
   .screen:nth-child(3) {
     background-image: url("./img/Tor.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
   }
 }

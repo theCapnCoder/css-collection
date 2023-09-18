@@ -26,19 +26,6 @@ export const SplitScreen2 = () => {
           </div>
         </div>
       ))}
-      {/* <div className={styles.screen}>
-        <h2>Iron</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, tempore
-          animi, sequi repellat dolores laudantium officia repellendus suscipit
-          praesentium recusandae saepe totam quaerat omnis aspernatur corrupti
-          iure porro dolorum numquam illum ullam repudiandae! Aut natus sit,
-          corrupti impedit iusto ratione, dolorem alias ab saepe maiores,
-          officiis dicta suscipit molestiae excepturi?
-        </p>
-      </div>
-      <div className={styles.screen}></div>
-      <div className={styles.screen}></div> */}
     </section>
   );
 };
