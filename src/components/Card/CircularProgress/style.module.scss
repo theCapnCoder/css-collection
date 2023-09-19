@@ -115,22 +115,20 @@
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         z-index: 1;
         pointer-events: none;
-        transition: bottom 0.5s, z-index 0s, transfrom 0.5s, padding 0.5s;
-        transition-delay: 0.5s, 0.5s, 0s, 0.5s;
+        transition: bottom .5s, z-index 0s, transform .5s, padding .5s;
+        transition-delay: .5s, .5s, 0s, .5s;
         color: #fff;
-        //TODO: Add transition-delay
       }
 
       &:hover {
         .text {
-          transition-delay: 0s, 0.5s, 0.5s, 0s;
-          bottom: -70px;
+          transition-delay: 0s, .5s, .5s, 0s;
+          bottom: -60px;
           z-index: 11;
-          transform: translateX(-50%) translateY(50px);
+          transform: translateX(-50%) translateY(-40px);
           padding: 10px 20px 10px;
         }
       }
-
 
       &:nth-child(1) {
         .text {
