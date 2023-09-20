@@ -1,6 +1,7 @@
 import { CircularProgress } from "./components/Card/CircularProgress/CircularProgress";
 import { HoverEffects } from "./components/Card/HoverEffects/HoverEffects";
 import { RotatingImage } from "./components/Card/RotatingImage/RotatingImage";
+import { CardHoverEffect } from "./components/Flexbox/CardHoverEffect/CardHoverEffect";
 import { FlipCard } from "./components/Flexbox/FlipCard/FlipCard";
 import { FullscreenHoverEfects } from "./components/Flexbox/FullscreenHoverEfects/FullscreenHoverEfects";
 import { ResponsiveMansory } from "./components/Flexbox/ResponsiveMansory/ResponsiveMansory";
@@ -15,16 +16,17 @@ function App() {
       {/* Card */}
       {/* <HoverEffects /> */}
       {/* <CircularProgress /> */}
-      <RotatingImage />
+      {/* <RotatingImage /> */}
 
       {/* Flexbox */}
 
-      {/* <HoverEffects />
-      <FullscreenHoverEfects />
-      <ResponsiveMansory />
-      <SplitScreen />
-      <SplitScreen2 />
-      <FlipCard /> */}
+      {/* <HoverEffects /> */}
+      <CardHoverEffect />
+      {/* <FullscreenHoverEfects /> */}
+      {/* <ResponsiveMansory /> */}
+      {/* <SplitScreen /> */}
+      {/* <SplitScreen2 /> */}
+      {/* <FlipCard /> */}
     </div>
   );
 }
