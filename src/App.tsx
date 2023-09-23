@@ -7,6 +7,7 @@ import { FullscreenHoverEfects } from "./components/Flexbox/FullscreenHoverEfect
 import { ResponsiveMansory } from "./components/Flexbox/ResponsiveMansory/ResponsiveMansory";
 import { SplitScreen } from "./components/Flexbox/SplitScreen/SplitScreen";
 import { SplitScreen2 } from "./components/Flexbox/SplitScreen2/SplitScreen2";
+import NotFoundPage from "./components/ResponsiveWebsite/NotFoundPage/NotFoundPage";
 
 import styles from "./style.module.scss";
 
@@ -21,12 +22,15 @@ function App() {
       {/* Flexbox */}
 
       {/* <HoverEffects /> */}
-      <CardHoverEffect />
+      {/* <CardHoverEffect /> */}
       {/* <FullscreenHoverEfects /> */}
       {/* <ResponsiveMansory /> */}
       {/* <SplitScreen /> */}
       {/* <SplitScreen2 /> */}
       {/* <FlipCard /> */}
+
+      {/* Responsive Website */}
+      <NotFoundPage />
     </div>
   );
 }

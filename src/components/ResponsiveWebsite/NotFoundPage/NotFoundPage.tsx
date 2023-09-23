@@ -5,9 +5,15 @@ const NotFoundPage = () => {
   return (
     <div className={styles.error}>
       <div className={styles.sky}>
-        <h2>404</h2>
+        <h2>
+          <span>4</span>
+          <span>0</span>
+          <span>4</span>
+        </h2>
         <div className={styles.grass}></div>
-        <img src={planeImage} alt="plane" />
+        <div className={styles.imgBox}>
+          <img src={planeImage} alt="plane" />
+        </div>
       </div>
 
       <div className={styles.field}>
