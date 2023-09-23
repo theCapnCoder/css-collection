@@ -1,0 +1,57 @@
+.gym {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("./video/box.mp4");
+  box-sizing: border-box;
+  font-family: 'consolas';
+  color: #fff;
+
+  h2,
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    span {
+      font-size: 3em;
+
+      // color: #000;
+    }
+  }
+
+  .content {
+    padding: 150px 0;
+
+    h2 {
+      font-size: 5em;
+      font-weight: 900;
+      line-height: 0.75;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 6em;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .videoBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+}
