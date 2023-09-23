@@ -18,7 +18,7 @@ const NotFoundPage = () => {
 
       <div className={styles.field}>
         <h2>Oops...looks like you got lost</h2>
-        <a href="#">Go Home</a>
+        <a href="/home">Go Home</a>
       </div>
     </div>
   );
