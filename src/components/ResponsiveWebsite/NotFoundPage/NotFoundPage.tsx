@@ -3,21 +3,16 @@ import planeImage from "./img/plane.png";
 
 const NotFoundPage = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.ceiling}>
-        <div className={styles.imgBox}>
-          <img src={planeImage} alt="plane" />
-        </div>
-        <div>
-          <span>4</span>
-          <span>0</span>
-          <span>4</span>
-        </div>
+    <div className={styles.error}>
+      <div className={styles.sky}>
+        <h2>404</h2>
+        <div className={styles.grass}></div>
+        <img src={planeImage} alt="plane" />
       </div>
 
-      <div className={styles.floor}>
-        <p>Opps...looks like you got lost</p>
-        <button>Go Home</button>
+      <div className={styles.field}>
+        <h2>Oops...looks like you got lost</h2>
+        <a href="#">Go Home</a>
       </div>
     </div>
   );
