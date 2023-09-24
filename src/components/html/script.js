@@ -15,3 +15,11 @@ function later() {
 var answer = now()
 
 setTimeout(later, 1000)
+
+var a = {
+  index: 1
+}
+
+console.log(a)
+
+a.index++
