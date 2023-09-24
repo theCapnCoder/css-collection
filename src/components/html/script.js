@@ -1,25 +1,45 @@
-console.log("test");
-const url = "https://api.escuelajs.co/api/v1/products";
-const data = fetch(url)
-console.log({ data });
+// console.log("test");
+// const url = "https://api.escuelajs.co/api/v1/products";
+// const data = fetch(url);
+// console.log({ data });
 
 function now() {
-  return 21
+  return 21;
 }
 
 function later() {
-  answer = answer *2 
-  console.log("Meaning of life", answer)
+  answer = answer * 2;
+  console.log("Meaning of life", answer);
 }
 
-var answer = now()
+var answer = now();
 
-setTimeout(later, 1000)
+setTimeout(later, 1000);
 
 var a = {
-  index: 1
+  index: 1,
+};
+
+console.log(a);
+
+a.index++;
+const show = () => {
+  console.log("show");
 }
 
-console.log(a)
+// var eventLoop = [show, show, a];
+// var event;
 
-a.index++
+// while (true) {
+//   console.log("eventLoop", eventLoop);
+//   if (eventLoop.length > 0) {
+//     event = eventLoop.shift();
+//   }
+
+//   try {
+//     // event();
+//   } catch (err) {
+//     // retportError(err);
+//     console.log("error");
+//   }
+// }
