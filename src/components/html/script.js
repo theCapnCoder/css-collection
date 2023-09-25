@@ -3,29 +3,29 @@
 // const data = fetch(url);
 // console.log({ data });
 
-function now() {
-  return 21;
-}
+// function now() {
+//   return 21;
+// }
 
-function later() {
-  answer = answer * 2;
-  console.log("Meaning of life", answer);
-}
+// function later() {
+//   answer = answer * 2;
+//   console.log("Meaning of life", answer);
+// }
 
-var answer = now();
+// var answer = now();
 
-setTimeout(later, 1000);
+// setTimeout(later, 1000);
 
-var a = {
-  index: 1,
-};
+// var a = {
+//   index: 1,
+// };
 
-console.log(a);
+// console.log(a);
 
-a.index++;
-const show = () => {
-  console.log("show");
-}
+// a.index++;
+// const show = () => {
+//   console.log("show");
+// }
 
 // var eventLoop = [show, show, a];
 // var event;
@@ -37,9 +37,33 @@ const show = () => {
 //   }
 
 //   try {
-//     // event();
+//     event();
 //   } catch (err) {
 //     // retportError(err);
 //     console.log("error");
 //   }
 // }
+
+console.log('A')
+
+setTimeout(function() {
+  console.log('B')
+}, 0)
+
+console.log('C')
+
+
+console.log( "A" );
+
+setTimeout( function(){
+	console.log( "B" );
+}, 0 );
+
+// API Задания
+schedule( function(){
+	console.log( "C" );
+
+	schedule( function(){
+		console.log( "D" );
+	} );
+} );
