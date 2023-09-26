@@ -44,26 +44,64 @@
 //   }
 // }
 
-console.log('A')
+// console.log('A')
 
-setTimeout(function() {
-  console.log('B')
-}, 0)
+// setTimeout(function() {
+//   console.log('B')
+// }, 0)
 
-console.log('C')
+// console.log('C')
 
+// console.log( "A" );
 
-console.log( "A" );
+// setTimeout( function(){
+// 	console.log( "B" );
+// }, 0 );
 
-setTimeout( function(){
-	console.log( "B" );
-}, 0 );
+// // API Задания
+// schedule( function(){
+// 	console.log( "C" );
 
-// API Задания
-schedule( function(){
-	console.log( "C" );
+// 	schedule( function(){
+// 		console.log( "D" );
+// 	} );
+// } );
 
-	schedule( function(){
-		console.log( "D" );
-	} );
-} );
+function doB() {
+  console.log("B");
+}
+
+function doD() {
+  console.log("D");
+}
+
+function doE() {
+  console.log("E");
+}
+
+function doF() {
+  console.log("F");
+}
+
+//////////////////////////////
+
+function doA(callback) {
+  callback();
+}
+
+function doC(callback) {
+  callback();
+}
+//////////////////
+
+doA(function () {
+  doB();
+
+  doC(function () {
+    doD();
+  });
+
+  doE();
+});
+
+doF();
