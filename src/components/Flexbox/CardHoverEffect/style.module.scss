@@ -11,13 +11,15 @@
   .container {
     width: 1000px;
     display: flex;
+    margin: 50px 0;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .box {
       position: relative;
       width: 300px;
       height: 400px;
+      margin: 15px;
       background: #000;
       box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
 

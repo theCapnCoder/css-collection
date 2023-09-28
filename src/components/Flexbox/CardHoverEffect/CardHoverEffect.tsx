@@ -19,6 +19,21 @@ const cards = [
     title: "Post title Three",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita sequi quam error sunt! In.",
   },
+  {
+    img: phone1,
+    title: "Post title One",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita sequi quam error sunt! In.",
+  },
+  {
+    img: phone2,
+    title: "Post title Two",
+    text: "Lorem ipsum dolor sit amet text one new and what consectetur adipisicing elit. Dolorem expedita sequi quam error sunt! In.",
+  },
+  {
+    img: phone3,
+    title: "Post title Three",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita sequi quam error sunt! In.",
+  },
 ];
 
 export const CardHoverEffect = () => {
