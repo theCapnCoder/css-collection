@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import img1 from "./img/photo1.jpg";
 import img2 from "./img/photo2.jpg";
 import img3 from "./img/photo3.jpg";
+import quotes from "./img/quotes.png";
 
 const cards = [
   {
@@ -27,14 +28,10 @@ const ResponsiveCard = () => {
       <div className={styles.container}>
         {cards.map((item, index) => (
           <div key={index} className={styles.card}>
+            <img src={quotes} alt="quotes" />
             <p>{item.text}</p>
-            
-            <div className={styles.content}>
-              <div className={styles.imgBox}>
-                <img src={item.img} alt={item.name} />
-              </div>
-              <h2>{item.name}</h2>
-            </div>
+            <img src={item.img} alt={item.name} />
+            <h2>{item.name}</h2>
           </div>
         ))}
       </div>
