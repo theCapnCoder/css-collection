@@ -28,10 +28,12 @@ const ResponsiveCard = () => {
       <div className={styles.container}>
         {cards.map((item, index) => (
           <div key={index} className={styles.card}>
-            <img src={quotes} alt="quotes" />
-            <p>{item.text}</p>
-            <img src={item.img} alt={item.name} />
-            <h2>{item.name}</h2>
+            <div className={styles.content}>
+              <img src={quotes} alt="quotes" className={styles.quote} />
+              <p>{item.text}</p>
+              <img src={item.img} alt={item.name} className={styles.user} />
+              <h3>{item.name}</h3>
+            </div>
           </div>
         ))}
       </div>
