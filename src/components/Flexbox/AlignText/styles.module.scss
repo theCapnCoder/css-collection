@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "consolas", sans-serif;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+
+  .container {
+    position: relative;
+    width: 930px;
+    height: 660px;
+    border: 2px solid #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: inherit;
+
+    .box {
+      width: 280px;
+      height: 190px;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      border: 2px solid #fff;
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 1.4em;
+      font-weight: 800;
+    }
+
+    .topLeft {
+      justify-content: start;
+      align-items: start;
+    }
+
+    .topCenter {
+      justify-content: center;
+      align-items: start;
+    }
+
+    .topRight {
+      justify-content: end;
+      align-items: start;
+    }
+
+    .centerLeft {
+      justify-content: start;
+      align-items: center;
+    }
+
+    .centerCenter {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .centerRight {
+      justify-content: end;
+      align-items: center;
+    }
+
+    .bottomLeft {
+      justify-content: start;
+      align-items: end;
+    }
+
+    .bottomCenter {
+      justify-content: center;
+      align-items: end;
+    }
+
+    .bottomRight {
+      justify-content: end;
+      align-items: end;
+    }
+  }
+}
