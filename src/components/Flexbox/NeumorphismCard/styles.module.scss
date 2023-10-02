@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebf5fc;
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1100px;
+
+    .card {
+      width: 320px;
+      margin: 20px;
+      padding: 40px 30px;
+      background: #ebf5fc;
+      border-radius: 40px;
+      box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+        6px 6px 20px rgba(0, 0, 0, 0.1);
+
+      .imgBox {
+        position: relative;
+        text-align: center;
+
+        img {
+          max-width: 120px;
+        }
+      }
+
+      .content {
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+
+        h2 {
+          color: #32a3b1;
+          font-weight: 700;
+          font-style: 1.4em;
+          letter-spacing: 2px;
+        }
+
+        p {
+          color: #32a3b1;
+        }
+
+        a {
+          display: inline-block;
+          padding: 10px 20px;
+          margin-top: 15px;
+          border-radius: 40px;
+          color: #32a3b1;
+          font-style: 16px;
+          text-decoration: none;
+          box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+            4px 4px 15px rgba(0, 0, 0, 0.1);
+
+          &:hover {
+            span {
+              display: block;
+              transform: scale(0.98);
+            }
+          }
+        }
+      }
+
+      button {
+        padding: 5px 10px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 15px rgba(100, 100, 100, 0.9);
+        border: none;
+      }
+
+      &:hover {
+        .imgBox,
+        .content {
+          transform: scale(0.98);
+        }
+        box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
+          inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+
+        a {
+          box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+            inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}
