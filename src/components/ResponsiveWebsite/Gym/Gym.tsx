@@ -22,8 +22,8 @@ const Gym = () => {
         <button>Join Us</button>
       </div>
       <div className={styles.videoBox}>
-        {/* <video src={video} muted loop autoPlay></video> */}
-        <video src={video}></video>
+        <video src={video} muted loop autoPlay></video>
+        {/* <video src={video}></video> */}
       </div>
     </div>
   );
