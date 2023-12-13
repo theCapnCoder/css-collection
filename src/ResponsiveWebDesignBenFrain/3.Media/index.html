@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --button-background-light: #ffffff;
+      --button-text-light: #333333;
+      --button-background-dark: #333333;
+      --button-text-dark: #ffffff;
+    }
+
+    [data-theme="light"] {
+      --theme-background: #ffffff;
+      --theme-text: #333333;
+    }
+
+    [data-theme="dark"] {
+      --theme-background: #333333;
+      --theme-text: #ffffff;
+    }
+
+    body {
+      background-color: var(--theme-background);
+      color: var(--theme-text);
+    }
+
+    .button {
+      background-color: var(--button-background-light);
+      color: var(--button-text-light);
+    }
+
+    .button[data-theme="dark"]{
+      background-color: red;
+      color: var(--button-text-dark);
+    }
+  </style>
+</head>
+<body>
+
+<button class="button">My Button</button>
+
+<script>
+  // Пример смены темы
+  document.querySelector('.button').dataset.theme = 'dark'; // или 'light'
+</script>
+
+</body>
+</html>
